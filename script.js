@@ -10,10 +10,30 @@
   var translations = {
     tr: {
       nav: { home: 'Ana Sayfa', about: 'Hakkımda', skills: 'Yetenekler', projects: 'Projeler', contact: 'İletişim', theme: 'Tema Değiştir', langSwitch: 'Dil: Türkçe / English' },
-      hero: { greeting: 'Merhaba, ben', tagline: 'Full stack web geliştirme odaklı, React, .NET ve Node.js ile modern uygulamalar üreten; oyun geliştirme deneyimiyle problem çözme becerilerini güçlendiren bilgisayar mühendisliği öğrencisi.', ctaProjects: 'Projelerimi Gör', ctaContact: 'İletişime Geç' },
-      about: { title: 'Hakkımda', p1: 'Bilgisayar mühendisliği öğrencisi olarak full stack web geliştirme alanında pratik deneyime sahibim; React, Angular, .NET, Node.js ve MySQL teknolojilerinde uzmanlaşmaktayım. REST API tasarımı, veritabanı şemaları oluşturma ve kullanıcı dostu arayüz geliştirme konularında yetkin olup temiz kod ve yazılım mimarisi prensiplerine önem veriyorum. Fintech alanındaki stajımda çevik bir ekip içinde e-ticaret platformu geliştirme sürecine katkıda bulundum; frontend–backend entegrasyonu ve veritabanı operasyonlarında aktif rol aldım. Ayrıca Unity ve C# ile oyun projeleri geliştirerek problem çözme, hata ayıklama ve performans optimizasyonu becerilerimi güçlendirdim. Yenilikçi projelerde sorumluluk almayı, ekipler arası iş birliğini ve profesyonel bir full stack mühendis olarak kendimi geliştirmeyi hedefliyorum.'},
-      skills: { title: 'Yetenekler & Teknolojiler', skill1: 'Full Stack Web Geliştirme', skill2: 'Backend & API Tasarımı', skill3: 'Veritabanı & Yazılım Mimarisi', skill4: 'Oyun Geliştirme & Problem Çözme', desc1: 'React, Angular, .NET ve Node.js kullanarak uçtan uca web uygulamaları geliştiriyorum. Temiz mimari, duyarlı arayüz ve ölçeklenebilir backend çözümlerine odaklanıyorum.', desc2: '.NET ve Node.js ile REST API, kimlik doğrulama ve sunucu tarafı iş mantığı geliştiriyorum. Frontend ile güvenli ve verimli backend entegrasyonu konusunda deneyim sahibiyim.', desc3: 'MySQL veritabanı tasarımı, ER modelleme ve optimize sorgular üzerinde çalışıyorum. Sürdürülebilir ve performanslı sistemler için mimari prensipleri uyguluyorum.', desc4: 'Unity ve C# ile oyun projeleri geliştirerek algoritmik düşünme, hata ayıklama ve performans optimizasyonu becerilerimi güçlendiriyorum.' },
-      projects: { title: 'Projeler', project1Title: 'Projenizin Adı', project1Desc: 'Projenizin kısa açıklaması buraya. Ne yaptığınızı ve hangi teknolojileri kullandığınızı yazın.', project1Detail: "Ek detay: hover'da görünen açıklama.", project2Title: 'İkinci Projeniz', project2Desc: 'İkinci proje açıklaması. Placeholder metin.', project2Detail: 'Hover detayı.', project3Title: 'Üçüncü Projeniz', project3Desc: 'Üçüncü proje açıklaması. Placeholder.', project3Detail: 'Hover detayı.', live: 'Canlı', source: 'Kaynak' },
+      hero: { greeting: 'Merhaba, ben', tagline: 'Full stack web geliştirme odaklı; React, Next.js, Angular, .NET, Spring Boot ve PostgreSQL ile modern ve ölçeklenebilir uygulamalar üreten yazılım mühendisi.', ctaProjects: 'Projelerimi Gör', ctaContact: 'İletişime Geç' },
+      about: { title: 'Hakkımda', content: `
+        <ul class="space-y-4 list-none pl-0">
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Frontend Mimari (Modern UI/UX):</strong> Angular (Standalone Components, RxJS Reactive Programming), React ve Next.js ile yüksek performanslı, dinamik ve kullanıcı dostu arayüzler geliştiriyorum.</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Kurumsal Backend & Güvenlik (Enterprise Backend):</strong> .NET ve Spring Boot ekosistemlerinde Stateless JWT mimarisi, BCrypt şifreleme ve Bucket4j (Rate Limiting) kullanarak güvenli, mikroservis yapısına uygun RESTful API'ler tasarlıyorum.</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>İleri Düzey Finansal Sistemler:</strong> "Double Spending" (Çifte Harcama) problemlerini önlemek için Redis (SETNX) ile Distributed Lock (Dağıtık Kilit) mekanizmaları kuruyor; Idempotency (Eşetkisellik) algoritmaları ve ACID Transactions (@Transactional) ile veri tutarlılığını %100 güvence altına alıyorum.</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Tasarım Desenleri ve Veritabanı:</strong> Uygulamaları Event-Driven Architecture (Olay Güdümlü Mimari), Domain-Driven Design (DDD) ve Clean Architecture prensipleriyle decouple (bağımsız) modüller halinde kodluyorum. PostgreSQL, MySQL ve MongoDB ile Entity Framework / Hibernate (ORM) entegrasyonlarını optimize ediyorum.</div></li>
+        </ul>
+      `},
+      skills: { title: 'Yetenekler & Teknolojiler', skill1: 'Full Stack Web Geliştirme', skill2: 'Backend & API Tasarımı', skill3: 'Veritabanı & Yazılım Mimarisi', skill4: 'Oyun Geliştirme & Problem Çözme', 
+        desc1: '<ul class="list-disc pl-5 mt-2 space-y-2"><li><strong>React</strong>, <strong>Angular</strong>, <strong>.NET</strong> ve <strong>Node.js</strong> ile uçtan uca web uygulamaları.</li><li><strong>Temiz Mimari (Clean Architecture)</strong> ve <strong>Duyarlı Arayüz (Responsive)</strong> odaklı sistemler.</li><li>Ölçeklenebilir <strong>Backend Çözümleri</strong> tasarımı.</li></ul>', 
+        desc2: '<ul class="list-disc pl-5 mt-2 space-y-2"><li><strong>.NET</strong> ve <strong>Node.js</strong> ile güvenli <strong>RESTful API</strong> ve kimlik doğrulama.</li><li>Sunucu tarafı iş mantığı (<strong>Business Logic</strong>) geliştirme.</li><li>Frontend ile verimli ve hızlı entegrasyon deneyimi.</li></ul>', 
+        desc3: '<ul class="list-disc pl-5 mt-2 space-y-2"><li><strong>MySQL</strong> ve <strong>PostgreSQL</strong> veritabanı tasarımı.</li><li><strong>ER Modelleme</strong> ve <strong>Optimize Sorgular</strong> ile veri yönetimi.</li><li>Sürdürülebilir ve performanslı sistemler için <strong>Mimari Prensipler</strong> (DDD).</li></ul>', 
+        desc4: '<ul class="list-disc pl-5 mt-2 space-y-2"><li><strong>Unity</strong> ve <strong>C#</strong> ile performans odaklı oyun projeleri.</li><li>Kompleks sistemlerde <strong>Algoritmik Düşünme</strong> ve <strong>Hata Ayıklama</strong>.</li><li>Yazılım geliştirme iş akışını destekleyen optimizasyon yetenekleri.</li></ul>' 
+      },
+      projects: { 
+        title: 'Projeler', clickToDetails: 'İncele', githubProfile: 'Tüm Projelerim (GitHub)',
+        project1Title: 'BBS E-Commerce', project1Desc: 'Modern e-ticaret platformu çözümü.', project1Detail: 'Gelişmiş sepet yönetimi ve ödeme entegrasyonu.',
+        project2Title: 'CoreBanking', project2Desc: 'Kurumsal mimari ile geliştirilmiş bankacılık sistemi.', project2Detail: 'Distributed Lock, Idempotency ve Event-Driven mimari.',
+        project3Title: 'FileNet Ldap', project3Desc: 'LDAP tabanlı dosya ve yetki yönetimi.', project3Detail: 'Kurumsal belge yönetimi entegrasyonu.',
+        project4Title: 'Advanced Application', project4Desc: 'Gelişmiş yazılım çözümleri.', project4Detail: 'Kompleks iş kuralları ve optimizasyon.',
+        project5Title: 'Kayıp Eşya Bulma Uygulaması', project5Desc: 'Mobil tabanlı kayıp eşya yönetim sistemi.', project5Detail: 'Kullanıcı dostu arayüz ve hızlı bildirim sistemi.',
+        project6Title: 'Belediye Bildiri & Şikayet Sistemi', project6Desc: 'Vatandaşlar için akıllı şehir çözümü.', project6Detail: 'Lokasyon tabanlı şikayet bildirim ve yönetim paneli.'
+      },
       contact: { title: 'İletişim', email: 'E-posta', nameLabel: 'Adınız', emailLabel: 'E-posta', messageLabel: 'Mesajınız', namePlaceholder: 'Adınız Soyadınız', messagePlaceholder: 'Mesajınızı buraya yazın...', send: 'Gönder' },
       footer: { rights: 'Tüm hakları saklıdır.' },
       backToTop: 'Yukarı çık',
@@ -21,10 +41,30 @@
     },
     en: {
       nav: { home: 'Home', about: 'About', skills: 'Skills', projects: 'Projects', contact: 'Contact', theme: 'Toggle theme', langSwitch: 'Language: Türkçe / English' },
-      hero: { greeting: "Hi, I'm", tagline: 'Computer Engineering student focused on full stack web development with React, .NET, and Node.js, strengthening problem-solving skills through game development with Unity.', ctaProjects: 'View Projects', ctaContact: 'Get in Touch' },
-      about: { title: 'About', p1: 'Computer Engineering student with hands-on experience in full stack web development, specializing in React, Angular, .NET, Node.js, and MySQL. Skilled in designing REST APIs, database schemas, and user-friendly interfaces while following clean code and software architecture principles. Completed a fintech internship where I contributed to an agile team developing an e-commerce platform, working on frontend–backend integration and database operations. Additionally developing games with Unity and C#, gaining strong problem-solving, debugging, and performance optimization skills. Motivated to contribute to innovative projects, collaborate within cross-functional teams, and grow as a professional full stack engineer.' },
-      skills: { title: 'Skills & Technologies', skill1: 'Full Stack Web Development', skill2: 'Backend & API Design', skill3: 'Database & Architecture', skill4: 'Game Development & Problem Solving', desc1: 'Building end-to-end web applications using React, Angular, .NET, and Node.js. Focused on clean architecture, responsive UI, and scalable backend solutions.', desc2: 'Developing RESTful APIs, authentication systems, and server-side logic with .NET and Node.js. Experienced in integrating frontend with secure and efficient backend services.', desc3: 'Designing MySQL databases, ER models, and optimized queries. Applying software architecture principles to create maintainable and high-performance systems.', desc4: 'Creating games with Unity and C#, improving algorithmic thinking, debugging, and performance optimization skills that support my software development workflow.' },
-      projects: { title: 'Projects', project1Title: 'Your Project Name', project1Desc: 'Short description of your project. What you built and which technologies you used.', project1Detail: 'Extra detail shown on hover.', project2Title: 'Second Project', project2Desc: 'Second project description. Placeholder.', project2Detail: 'Hover detail.', project3Title: 'Third Project', project3Desc: 'Third project description. Placeholder.', project3Detail: 'Hover detail.', live: 'Live', source: 'Source' },
+      hero: { greeting: "Hi, I'm", tagline: 'Software engineer focused on full-stack web development, building scalable and modern applications using React, Next.js, Angular, .NET, Spring Boot, and PostgreSQL.', ctaProjects: 'View Projects', ctaContact: 'Get in Touch' },
+      about: { title: 'About', content: `
+        <ul class="space-y-4 list-none pl-0">
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Frontend Architecture:</strong> Building high-performance, dynamic interfaces with Angular (Standalone Components, RxJS Reactive Programming), React, and Next.js.</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Enterprise Backend & Security:</strong> Designing microservices-ready RESTful APIs in .NET and Spring Boot using Stateless JWT architecture, BCrypt, and Bucket4j (Rate Limiting).</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Advanced Financial Systems:</strong> Preventing "Double Spending" with Distributed Locking (Redis SETNX), implementing Idempotency algorithms, and guaranteeing data integrity via ACID Transactions (@Transactional).</div></li>
+          <li class="flex gap-3"><span class="text-cyan-600 dark:text-cyan-400 mt-1">✦</span><div><strong>Design Patterns & Database:</strong> Decoupling systems with Event-Driven Architecture, Domain-Driven Design (DDD), and Clean Architecture. Optimizing ORM integrations (Entity Framework/Hibernate) with PostgreSQL, MySQL, and MongoDB.</div></li>
+        </ul>
+      `},
+      skills: { title: 'Skills & Technologies', skill1: 'Full Stack Web Development', skill2: 'Backend & API Design', skill3: 'Database & Architecture', skill4: 'Game Development & Problem Solving', 
+        desc1: '<ul class="list-disc pl-5 mt-2 space-y-2"><li>End-to-end web apps with <strong>React</strong>, <strong>Angular</strong>, <strong>.NET</strong>, and <strong>Node.js</strong>.</li><li>Focused on <strong>Clean Architecture</strong> and <strong>Responsive UI</strong>.</li><li>Scalable <strong>Backend Solutions</strong>.</li></ul>', 
+        desc2: '<ul class="list-disc pl-5 mt-2 space-y-2"><li>Secure <strong>RESTful APIs</strong> and authentication via <strong>.NET</strong> & <strong>Node.js</strong>.</li><li>Server-side <strong>Business Logic</strong> development.</li><li>Efficient and seamless frontend integration.</li></ul>', 
+        desc3: '<ul class="list-disc pl-5 mt-2 space-y-2"><li><strong>MySQL</strong> and <strong>PostgreSQL</strong> database design.</li><li><strong>ER Modeling</strong> and <strong>Optimized Queries</strong>.</li><li>Software architecture principles for maintainable systems (<strong>DDD</strong>).</li></ul>', 
+        desc4: '<ul class="list-disc pl-5 mt-2 space-y-2"><li>Performance-focused games with <strong>Unity</strong> and <strong>C#</strong>.</li><li><strong>Algorithmic Thinking</strong> and <strong>Debugging</strong> in complex systems.</li><li>Optimization skills that support modern software workflows.</li></ul>' 
+      },
+      projects: { 
+        title: 'Projects', clickToDetails: 'View Details', githubProfile: 'All Projects (GitHub)',
+        project1Title: 'BBS E-Commerce', project1Desc: 'Modern e-commerce platform solution.', project1Detail: 'Advanced cart management and payment integration.',
+        project2Title: 'CoreBanking', project2Desc: 'Enterprise banking system.', project2Detail: 'Distributed Lock, Idempotency and Event-Driven architecture.',
+        project3Title: 'FileNet Ldap', project3Desc: 'LDAP based file and authorization management.', project3Detail: 'Enterprise document management integration.',
+        project4Title: 'Advanced Application', project4Desc: 'Advanced software solutions.', project4Detail: 'Complex business rules and optimization.',
+        project5Title: 'Lost & Found Mobile App', project5Desc: 'Mobile based lost item management.', project5Detail: 'User-friendly interface and fast notification system.',
+        project6Title: 'Municipality Complaint System', project6Desc: 'Smart city solution for citizens.', project6Detail: 'Location-based complaint reporting and management panel.'
+      },
       contact: { title: 'Contact', email: 'Email', nameLabel: 'Your name', emailLabel: 'Email', messageLabel: 'Your message', namePlaceholder: 'Your name', messagePlaceholder: 'Write your message here...', send: 'Send' },
       footer: { rights: 'All rights reserved.' },
       backToTop: 'Back to top',
@@ -53,6 +93,11 @@
       var key = el.getAttribute('data-i18n-placeholder');
       var text = getText(lang, key);
       if (text !== key) el.placeholder = text;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      var text = getText(lang, key);
+      if (text !== key) el.innerHTML = text;
     });
     document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-aria');
@@ -232,10 +277,197 @@
   var yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ========== FORM GÖNDERİMİ (placeholder - sunucu yok) ==========
-  document.querySelector('#iletisim form')?.addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert(getText(getLang(), 'formDemo'));
+  // ========== PROJE DETAY MODALI VE DATA ==========
+  
+  // Proje verileri (İleride resimleri eklediğinde buralara path gireceksin)
+  // Not: Kapak resmi hariç (diğer resimler carousel'de dönecek).
+  var projectData = {
+    1: {
+      tags: ['Angular', 'Spring Boot', 'PostgreSQL'],
+      images: [
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110248.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110301.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110340.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110448.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110458.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110537.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110602.png',
+        'photos/ecommerce/Ekran görüntüsü 2026-07-23 110609.png'
+      ],
+      liveLink: 'https://bbs-ecommerce-psi.vercel.app/',
+      githubLink: 'https://github.com/canresul07?tab=repositories',
+      descTr: '<p>BBS E-Commerce, Angular ve Spring Boot kullanılarak geliştirilmiş modern bir e-ticaret platformudur. Kullanıcı dostu arayüzü ile ürün yönetimi, sepet işlemleri ve güvenli ödeme süreçlerini içerir.</p><p>Clean Architecture prensiplerine sadık kalınarak tasarlanmıştır.</p>',
+      descEn: '<p>BBS E-Commerce is a modern e-commerce platform developed using Angular and Spring Boot. It features a user-friendly interface with product management, cart operations, and secure payment processes.</p>'
+    },
+    2: {
+      tags: ['Spring Boot', 'Redis', 'MongoDB', 'Angular'],
+      images: [
+        'photos/Ekran görüntüsü 2026-07-28 174434.png',
+        'photos/Ekran görüntüsü 2026-07-28 174800.png',
+        'photos/Ekran görüntüsü 2026-07-28 174813.png',
+        'photos/Ekran görüntüsü 2026-07-28 174904.png',
+        'photos/Ekran görüntüsü 2026-07-28 174920.png',
+        'photos/Ekran görüntüsü 2026-07-28 174929.png',
+        'photos/Ekran görüntüsü 2026-07-28 174944.png',
+        'photos/Ekran görüntüsü 2026-07-28 175015.png',
+        'photos/Ekran görüntüsü 2026-07-28 175026.png',
+        'photos/Ekran görüntüsü 2026-07-28 175133.png',
+        'photos/Ekran görüntüsü 2026-07-28 175147.png'
+      ],
+      liveLink: 'https://github.com/canresul07/CoreBanking',
+      githubLink: 'https://github.com/canresul07/CoreBanking',
+      descTr: '<p>CoreBanking, finansal işlemler için tasarlanmış kurumsal bir bankacılık simülasyonudur. Redis kullanılarak Distributed Lock (Double Spending önleme) ve Idempotency gibi kritik mühendislik problemlerine çözüm getirilmiştir.</p>',
+      descEn: '<p>CoreBanking is an enterprise banking simulation designed for financial transactions. It solves critical engineering problems such as Distributed Lock (Double Spending prevention) and Idempotency using Redis.</p>'
+    },
+    3: {
+      tags: ['Java', 'LDAP', 'FileNet'],
+      images: ['https://via.placeholder.com/800x450/0891b2/ffffff?text=FileNet+Image+1'],
+      liveLink: 'https://github.com/canresul07?tab=repositories',
+      githubLink: 'https://github.com/canresul07?tab=repositories',
+      descTr: '<p>Kurumsal seviyede doküman yönetimi (FileNet) ve kullanıcı yetkilendirme (LDAP) süreçlerini entegre eden güvenli bir sistem projesidir.</p>',
+      descEn: '<p>A secure system project integrating enterprise-level document management (FileNet) and user authorization (LDAP) processes.</p>'
+    },
+    4: {
+      tags: ['C#', '.NET', 'Architecture'],
+      images: ['https://via.placeholder.com/800x450/0891b2/ffffff?text=AdvancedApp+Image+1'],
+      liveLink: 'https://github.com/canresul07?tab=repositories',
+      githubLink: 'https://github.com/canresul07?tab=repositories',
+      descTr: '<p>Karmaşık iş kurallarını işlemek ve optimize etmek amacıyla geliştirilmiş ileri düzey yazılım projesi.</p>',
+      descEn: '<p>An advanced software project developed to process and optimize complex business rules.</p>'
+    },
+    5: {
+      tags: ['Mobile', 'UI/UX', 'Database'],
+      images: ['https://via.placeholder.com/800x450/0891b2/ffffff?text=Mobile+Image+1'],
+      liveLink: 'https://github.com/canresul07?tab=repositories',
+      githubLink: 'https://github.com/canresul07?tab=repositories',
+      descTr: '<p>Kullanıcıların kayıp eşyalarını bildirebilecekleri ve bulabilecekleri, hızlı bildirim sistemine sahip mobil uygulama.</p>',
+      descEn: '<p>A mobile application with a fast notification system where users can report and find lost items.</p>'
+    },
+    6: {
+      tags: ['Web', 'Map Integration'],
+      images: ['https://via.placeholder.com/800x450/0891b2/ffffff?text=Belediye+Image+1'],
+      liveLink: 'https://github.com/canresul07?tab=repositories',
+      githubLink: 'https://github.com/canresul07?tab=repositories',
+      descTr: '<p>Vatandaşların belediyeye lokasyon bazlı şikayet ve bildirim gönderebilmesini sağlayan akıllı şehir yönetim paneli.</p>',
+      descEn: '<p>A smart city management panel enabling citizens to send location-based complaints and reports to the municipality.</p>'
+    }
+  };
+
+  const modal = document.getElementById('project-modal');
+  const modalOverlay = document.getElementById('modal-overlay');
+  const modalContent = document.getElementById('modal-content');
+  const modalClose = document.getElementById('modal-close');
+  const carouselInner = document.getElementById('modal-carousel');
+  const carouselDots = document.getElementById('carousel-dots');
+  const btnPrev = document.getElementById('carousel-prev');
+  const btnNext = document.getElementById('carousel-next');
+
+  let currentSlide = 0;
+  let totalSlides = 0;
+
+  function updateCarousel() {
+    carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+    Array.from(carouselDots.children).forEach((dot, index) => {
+      dot.classList.toggle('bg-cyan-600', index === currentSlide);
+      dot.classList.toggle('bg-slate-300', index !== currentSlide);
+    });
+  }
+
+  function openModal(id) {
+    const data = projectData[id];
+    if (!data) return;
+
+    // İçeriği Doldur
+    const lang = getLang();
+    document.getElementById('modal-title').textContent = getText(lang, `projects.project${id}Title`);
+    document.getElementById('modal-desc').innerHTML = lang === 'en' ? data.descEn : data.descTr;
+    
+    document.getElementById('modal-live-btn').href = data.liveLink;
+    document.getElementById('modal-github-btn').href = data.githubLink;
+
+    // Etiketler (Tags)
+    const tagsContainer = document.getElementById('modal-tags');
+    tagsContainer.innerHTML = '';
+    data.tags.forEach(tag => {
+      const span = document.createElement('span');
+      span.className = 'px-3 py-1 bg-cyan-100 dark:bg-cyan-900/40 text-cyan-800 dark:text-cyan-300 rounded-full text-sm font-medium';
+      span.textContent = tag;
+      tagsContainer.appendChild(span);
+    });
+
+    // Carousel Resimleri
+    carouselInner.innerHTML = '';
+    carouselDots.innerHTML = '';
+    totalSlides = data.images.length;
+    currentSlide = 0;
+
+    if (totalSlides === 0) {
+      carouselInner.innerHTML = '<div class="carousel-item flex items-center justify-center text-slate-500">Görsel bulunamadı</div>';
+      btnPrev.classList.add('hidden');
+      btnNext.classList.add('hidden');
+    } else {
+      btnPrev.classList.remove('hidden');
+      btnNext.classList.remove('hidden');
+      
+      data.images.forEach((src, index) => {
+        // Image div
+        const div = document.createElement('div');
+        div.className = 'carousel-item h-full bg-contain bg-no-repeat bg-center';
+        div.style.backgroundImage = `url('${src}')`;
+        carouselInner.appendChild(div);
+
+        // Dot
+        const dot = document.createElement('button');
+        dot.className = 'w-2.5 h-2.5 rounded-full transition-colors';
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          updateCarousel();
+        });
+        carouselDots.appendChild(dot);
+      });
+      updateCarousel();
+    }
+
+    // Modalı Göster
+    modal.classList.remove('hidden');
+    // Animasyon frame'i için timeout
+    setTimeout(() => {
+      modalOverlay.classList.remove('opacity-0');
+      modalContent.classList.remove('opacity-0', 'scale-95');
+      document.body.style.overflow = 'hidden'; // Arka plan scroll'u engelle
+    }, 10);
+  }
+
+  function closeModal() {
+    modalOverlay.classList.add('opacity-0');
+    modalContent.classList.add('opacity-0', 'scale-95');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300); // transition süresi kadar bekle
+  }
+
+  // Event Listeners
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', function() {
+      const id = this.getAttribute('data-project-id');
+      openModal(id);
+    });
+  });
+
+  modalClose?.addEventListener('click', closeModal);
+  modalOverlay?.addEventListener('click', closeModal);
+  
+  btnNext?.addEventListener('click', () => {
+    if (totalSlides <= 1) return;
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  });
+  
+  btnPrev?.addEventListener('click', () => {
+    if (totalSlides <= 1) return;
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
   });
 
   // Sayfa yüklendiğinde tema ve dil uygula
