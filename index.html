@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rasul Can - Yazılım Geliştirici / Tasarımcı portfolyo sitesi. Projeler, yetenekler ve iletişim bilgileri.">
+  <meta name="description"
+    content="Rasul Can - Yazılım Geliştirici / Tasarımcı portfolyo sitesi. Projeler, yetenekler ve iletişim bilgileri.">
   <meta name="keywords" content="portfolyo, yazılım, geliştirici, projeler, Rasul Can">
   <meta name="author" content="Rasul Can">
   <meta property="og:title" content="Rasul Can | Portfolyo">
@@ -34,217 +36,326 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
-<body class="min-h-screen font-['Plus_Jakarta_Sans'] antialiased text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-900">
+
+<body
+  class="min-h-screen font-['Plus_Jakarta_Sans'] antialiased text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-900">
   <!-- Ana gradient: soldan petrol → sağa beyaz (tüm sayfa) -->
-  <div class="fixed inset-0 bg-gradient-to-r from-cyan-600/25 via-cyan-100/15 to-white dark:from-cyan-950/60 dark:via-slate-900 dark:to-slate-900 pointer-events-none z-0" aria-hidden="true"></div>
-  
+  <div
+    class="fixed inset-0 bg-gradient-to-r from-cyan-600/25 via-cyan-100/15 to-white dark:from-cyan-950/60 dark:via-slate-900 dark:to-slate-900 pointer-events-none z-0"
+    aria-hidden="true"></div>
+
   <!-- Teknolojik Grid (Mazgal) -->
   <div class="tech-grid-bg"></div>
 
   <!-- Scroll progress - petrol -->
-  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-cyan-600 to-teal-600 z-[100] transition-all duration-300 ease-out" style="width: 0%;"></div>
+  <div id="scroll-progress"
+    class="fixed top-0 left-0 h-1 bg-gradient-to-r from-cyan-600 to-teal-600 z-[100] transition-all duration-300 ease-out"
+    style="width: 0%;"></div>
 
   <!-- Sticky Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm transition-colors duration-300">
+  <header
+    class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm transition-colors duration-300">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between relative z-10">
-      <a href="#hero" class="text-xl font-bold bg-gradient-to-r from-cyan-700 to-teal-700 bg-clip-text text-transparent dark:from-cyan-400 dark:to-teal-400">Rasul Can</a>
+      <a href="#hero"
+        class="text-xl font-bold bg-gradient-to-r from-cyan-700 to-teal-700 bg-clip-text text-transparent dark:from-cyan-400 dark:to-teal-400">Rasul
+        Can</a>
       <ul class="hidden sm:flex items-center gap-6">
-        <li><a href="#hero" class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300" data-i18n="nav.home">Ana Sayfa</a></li>
-        <li><a href="#hakkimda" class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300" data-i18n="nav.about">Hakkımda</a></li>
-        <li><a href="#yetenekler" class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300" data-i18n="nav.skills">Yetenekler</a></li>
-        <li><a href="#projeler" class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300" data-i18n="nav.projects">Projeler</a></li>
-        <li><a href="#iletisim" class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300" data-i18n="nav.contact">İletişim</a></li>
+        <li><a href="#hero"
+            class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+            data-i18n="nav.home">Ana Sayfa</a></li>
+        <li><a href="#hakkimda"
+            class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+            data-i18n="nav.about">Hakkımda</a></li>
+        <li><a href="#yetenekler"
+            class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+            data-i18n="nav.skills">Yetenekler</a></li>
+        <li><a href="#projeler"
+            class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+            data-i18n="nav.projects">Projeler</a></li>
+        <li><a href="#iletisim"
+            class="nav-link text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+            data-i18n="nav.contact">İletişim</a></li>
         <!-- Dil seçeneği -->
         <li>
-          <button id="lang-toggle" type="button" class="lang-toggle-btn px-3 py-1.5 rounded-lg bg-slate-200/80 dark:bg-slate-700/80 hover:bg-slate-300 dark:hover:bg-slate-600 transition-all duration-300 text-sm font-medium" aria-label="Dil / Language" title="TR / EN">
+          <button id="lang-toggle" type="button"
+            class="lang-toggle-btn px-3 py-1.5 rounded-lg bg-slate-200/80 dark:bg-slate-700/80 hover:bg-slate-300 dark:hover:bg-slate-600 transition-all duration-300 text-sm font-medium"
+            aria-label="Dil / Language" title="TR / EN">
             <span id="lang-display">TR</span>
           </button>
         </li>
         <!-- Dark mode toggle -->
         <li>
-          <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-slate-200/80 dark:bg-slate-700/80 hover:bg-slate-300 dark:hover:bg-slate-600 transition-all duration-300 hover:scale-110" aria-label="Tema değiştir">
+          <button id="theme-toggle" type="button"
+            class="p-2 rounded-lg bg-slate-200/80 dark:bg-slate-700/80 hover:bg-slate-300 dark:hover:bg-slate-600 transition-all duration-300 hover:scale-110"
+            aria-label="Tema değiştir">
             <span id="theme-icon-dark">🌙</span>
             <span id="theme-icon-light" class="hidden">☀️</span>
           </button>
         </li>
       </ul>
       <!-- Mobil menü butonu -->
-      <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg bg-slate-200/80 dark:bg-slate-700/80" aria-label="Menü">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg bg-slate-200/80 dark:bg-slate-700/80"
+        aria-label="Menü">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
     </nav>
     <!-- Mobil menü (açılır) -->
-    <div id="mobile-menu" class="hidden sm:hidden border-t border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl px-4 py-3">
+    <div id="mobile-menu"
+      class="hidden sm:hidden border-t border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl px-4 py-3">
       <ul class="flex flex-col gap-2">
         <li><a href="#hero" class="block py-2 nav-link" data-i18n="nav.home">Ana Sayfa</a></li>
         <li><a href="#hakkimda" class="block py-2 nav-link" data-i18n="nav.about">Hakkımda</a></li>
         <li><a href="#yetenekler" class="block py-2 nav-link" data-i18n="nav.skills">Yetenekler</a></li>
         <li><a href="#projeler" class="block py-2 nav-link" data-i18n="nav.projects">Projeler</a></li>
         <li><a href="#iletisim" class="block py-2 nav-link" data-i18n="nav.contact">İletişim</a></li>
-        <li><button id="lang-toggle-mobile" class="py-2 text-left w-full font-medium" data-i18n="nav.langSwitch">Dil: Türkçe / English</button></li>
-        <li><button id="theme-toggle-mobile" class="py-2 text-left w-full" data-i18n="nav.theme">Tema Değiştir</button></li>
+        <li><button id="lang-toggle-mobile" class="py-2 text-left w-full font-medium" data-i18n="nav.langSwitch">Dil:
+            Türkçe / English</button></li>
+        <li><button id="theme-toggle-mobile" class="py-2 text-left w-full" data-i18n="nav.theme">Tema Değiştir</button>
+        </li>
       </ul>
     </div>
   </header>
 
   <main class="relative z-10">
     <!-- ========== HERO SECTION ========== -->
-    <section id="hero" class="hero-smooth-gradient min-h-[90vh] flex flex-col justify-center items-center text-center px-4 py-20 relative overflow-hidden">
+    <section id="hero"
+      class="hero-smooth-gradient min-h-[90vh] flex flex-col justify-center items-center text-center px-4 py-20 relative overflow-hidden">
       <div class="relative z-10 max-w-3xl mx-auto">
-        <p class="text-cyan-600 dark:text-cyan-400 font-medium mb-2 animate-fade-in opacity-0" style="animation-delay: 0.1s;" data-i18n="hero.greeting">Merhaba, ben</p>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0" style="animation-delay: 0.2s;">
-          <span id="typing-text" class="bg-gradient-to-r from-cyan-700 to-teal-700 dark:from-cyan-400 dark:to-teal-400 bg-clip-text text-transparent"></span>
+        <p class="text-cyan-600 dark:text-cyan-400 font-medium mb-2 animate-fade-in opacity-0"
+          style="animation-delay: 0.1s;" data-i18n="hero.greeting">Merhaba, ben</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
+          style="animation-delay: 0.2s;">
+          <span id="typing-text"
+            class="bg-gradient-to-r from-cyan-700 to-teal-700 dark:from-cyan-400 dark:to-teal-400 bg-clip-text text-transparent"></span>
           <span id="typing-cursor" class="inline-block w-0.5 h-[1em] bg-cyan-500 ml-0.5 animate-pulse"></span>
         </h1>
-        <p class="text-lg sm:text-xl text-slate-700 dark:text-slate-300 mb-8 animate-fade-in opacity-0" style="animation-delay: 0.4s;" data-i18n="hero.tagline">
+        <p class="text-lg sm:text-xl text-slate-700 dark:text-slate-300 mb-8 animate-fade-in opacity-0"
+          style="animation-delay: 0.4s;" data-i18n="hero.tagline">
           Kısa tanıtım cümleniz buraya gelecek. Örn: Yazılım geliştirici, tasarımcı veya uzmanlık alanınız.
         </p>
         <div class="flex flex-wrap justify-center gap-4 animate-fade-in opacity-0" style="animation-delay: 0.6s;">
-          <a href="#projeler" class="cta-primary px-6 py-3 rounded-xl font-semibold bg-gradient-to-r from-cyan-700 to-teal-700 text-white shadow-lg shadow-cyan-600/35 hover:scale-105 hover:shadow-cyan-600/50 transition-all duration-300" data-i18n="hero.ctaProjects">Projelerimi Gör</a>
-          <a href="#iletisim" class="cta-secondary px-6 py-3 rounded-xl font-semibold border-2 border-cyan-600 text-cyan-800 dark:text-cyan-300 hover:bg-cyan-700 hover:text-white dark:hover:text-white transition-all duration-300" data-i18n="hero.ctaContact">İletişime Geç</a>
+          <a href="#projeler"
+            class="cta-primary px-6 py-3 rounded-xl font-semibold bg-gradient-to-r from-cyan-700 to-teal-700 text-white shadow-lg shadow-cyan-600/35 hover:scale-105 hover:shadow-cyan-600/50 transition-all duration-300"
+            data-i18n="hero.ctaProjects">Projelerimi Gör</a>
+          <a href="#iletisim"
+            class="cta-secondary px-6 py-3 rounded-xl font-semibold border-2 border-cyan-600 text-cyan-800 dark:text-cyan-300 hover:bg-cyan-700 hover:text-white dark:hover:text-white transition-all duration-300"
+            data-i18n="hero.ctaContact">İletişime Geç</a>
         </div>
       </div>
     </section>
 
     <!-- ========== HAKKIMDA ========== -->
-    <section id="hakkimda" class="py-20 px-4 scroll-mt-20 bg-gradient-to-r from-cyan-100/40 via-white to-white dark:from-cyan-950/30 dark:via-slate-800 dark:to-slate-800 relative z-10">
+    <section id="hakkimda"
+      class="py-20 px-4 scroll-mt-20 bg-gradient-to-r from-cyan-100/40 via-white to-white dark:from-cyan-950/30 dark:via-slate-800 dark:to-slate-800 relative z-10">
       <div class="max-w-5xl mx-auto">
-        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100" data-i18n="about.title">Hakkımda</h2>
+        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100"
+          data-i18n="about.title">Hakkımda</h2>
         <div class="flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <!-- Fotoğraf alanı (placeholder) -->
-          <div class="flex-shrink-0 w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-br from-cyan-300 to-teal-300 dark:from-cyan-700/50 dark:to-teal-700/50 flex items-center justify-center border-4 border-white dark:border-slate-600 shadow-xl shadow-cyan-200/50 dark:shadow-cyan-900/30 overflow-hidden">
+          <div
+            class="flex-shrink-0 w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-br from-cyan-300 to-teal-300 dark:from-cyan-700/50 dark:to-teal-700/50 flex items-center justify-center border-4 border-white dark:border-slate-600 shadow-xl shadow-cyan-200/50 dark:shadow-cyan-900/30 overflow-hidden">
             <span class="text-4xl text-cyan-600 dark:text-cyan-400">👤</span>
             <!-- Gerçek fotoğraf için: <img src="profil-fotoğrafınız.jpg" alt="Adınız" class="w-full h-full object-cover"> -->
           </div>
-            <div id="about-content" class="space-y-4" data-i18n-html="about.content">
-              <!-- JS tarafından doldurulacak -->
-            </div>
+          <div id="about-content" class="space-y-4" data-i18n-html="about.content">
+            <!-- JS tarafından doldurulacak -->
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ========== YETENEKLER / TEKNOLOJİLER ========== -->
-    <section id="yetenekler" class="py-20 px-4 bg-gradient-to-r from-cyan-50/50 via-white to-white dark:from-cyan-950/20 dark:via-slate-800 dark:to-slate-800 scroll-mt-20 relative z-10">
+    <section id="yetenekler"
+      class="py-20 px-4 bg-gradient-to-r from-cyan-50/50 via-white to-white dark:from-cyan-950/20 dark:via-slate-800 dark:to-slate-800 scroll-mt-20 relative z-10">
       <div class="max-w-5xl mx-auto">
-        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100" data-i18n="skills.title">Yetenekler & Teknolojiler</h2>
+        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100"
+          data-i18n="skills.title">Yetenekler & Teknolojiler</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
           <!-- Yetenek kartları - placeholder -->
-          <div class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
+          <div
+            class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
             <div class="text-3xl mb-2">💻</div>
             <h3 class="font-semibold text-slate-800 dark:text-slate-100 mb-2" data-i18n="skills.skill1">Yetenek 1</h3>
-            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc1">Kısa açıklama</div>
+            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc1">Kısa
+              açıklama</div>
           </div>
-          <div class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
+          <div
+            class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
             <div class="text-3xl mb-2">🎨</div>
             <h3 class="font-semibold text-slate-800 dark:text-slate-100 mb-2" data-i18n="skills.skill2">Yetenek 2</h3>
-            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc2">Kısa açıklama</div>
+            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc2">Kısa
+              açıklama</div>
           </div>
-          <div class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
+          <div
+            class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
             <div class="text-3xl mb-2">⚙️</div>
             <h3 class="font-semibold text-slate-800 dark:text-slate-100 mb-2" data-i18n="skills.skill3">Yetenek 3</h3>
-            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc3">Kısa açıklama</div>
+            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc3">Kısa
+              açıklama</div>
           </div>
-          <div class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
+          <div
+            class="skill-card rounded-2xl p-6 bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none hover:scale-105 hover:shadow-cyan-200/40 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300">
             <div class="text-3xl mb-2">🔧</div>
             <h3 class="font-semibold text-slate-800 dark:text-slate-100 mb-2" data-i18n="skills.skill4">Yetenek 4</h3>
-            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc4">Kısa açıklama</div>
+            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n-html="skills.desc4">Kısa
+              açıklama</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== PROJELER ========== -->
-    <section id="projeler" class="py-20 px-4 scroll-mt-20 bg-gradient-to-r from-cyan-100/50 via-white to-white dark:from-cyan-950/25 dark:via-slate-800 dark:to-slate-800 relative z-10">
+    <section id="projeler"
+      class="py-20 px-4 scroll-mt-20 bg-gradient-to-r from-cyan-100/50 via-white to-white dark:from-cyan-950/25 dark:via-slate-800 dark:to-slate-800 relative z-10">
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-center mb-8">
-          <a href="https://github.com/canresul07?tab=repositories" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-900 dark:hover:bg-slate-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-slate-400/30 dark:shadow-none font-semibold">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+          <a href="https://github.com/canresul07?tab=repositories" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-900 dark:hover:bg-slate-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-slate-400/30 dark:shadow-none font-semibold">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"></path>
+            </svg>
             <span data-i18n="projects.githubProfile">Tüm Projelerim (GitHub)</span>
           </a>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
           <!-- Proje kartı 1 -->
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="1">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <img src="photos/ecommerce/Ekran görüntüsü 2026-07-23 110340.png" alt="E-Commerce" class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="1">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/ecommerce/Ekran görüntüsü 2026-07-23 110340.png" alt="E-Commerce"
+                class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project1Title">Projenizin Adı</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project1Desc">Projenizin kısa açıklaması buraya. Ne yaptığınızı ve hangi teknolojileri kullandığınızı yazın.</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project1Detail">Ek detay: hover'da görünen açıklama.</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project1Title">Projenizin Adı</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project1Desc">
+                Projenizin kısa açıklaması buraya. Ne yaptığınızı ve hangi teknolojileri kullandığınızı yazın.</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project1Detail">Ek detay: hover'da görünen açıklama.</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="2">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <img src="photos/Ekran görüntüsü 2026-07-28 174800.png" alt="CoreBanking" class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="2">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/Ekran görüntüsü 2026-07-28 174800.png" alt="CoreBanking"
+                class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project2Title">İkinci Projeniz</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project2Desc">İkinci proje açıklaması. Placeholder metin.</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project2Detail">Hover detayı.</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project2Title">İkinci Projeniz</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project2Desc">
+                İkinci proje açıklaması. Placeholder metin.</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project2Detail">Hover detayı.</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
           <!-- Proje kartı 3 -->
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="3">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <span class="text-5xl opacity-60 transition-transform duration-500 ease-out group-hover:scale-110">🖼️</span>
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="3">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/FileNet/Ekran görüntüsü 2026-07-21 115455.png" alt="FileNet"
+                class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project3Title">Üçüncü Projeniz</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project3Desc">Üçüncü proje açıklaması. Placeholder.</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project3Detail">Hover detayı.</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project3Title">Üçüncü Projeniz</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project3Desc">
+                Üçüncü proje açıklaması. Placeholder.</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project3Detail">Hover detayı.</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
           <!-- Proje kartı 4 -->
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="4">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <span class="text-5xl opacity-60 transition-transform duration-500 ease-out group-hover:scale-110">🖼️</span>
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="4">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/github foto/github.jpg" alt="GitHub Repo" class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project4Title">Dördüncü Proje</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project4Desc">Açıklama</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project4Detail">Detay</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project4Title">Dördüncü Proje</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project4Desc">
+                Açıklama</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project4Detail">Detay</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
           <!-- Proje kartı 5 -->
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="5">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <span class="text-5xl opacity-60 transition-transform duration-500 ease-out group-hover:scale-110">🖼️</span>
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="5">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/github foto/github.jpg" alt="GitHub Repo" class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project5Title">Beşinci Proje</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project5Desc">Açıklama</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project5Detail">Detay</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project5Title">Beşinci Proje</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project5Desc">
+                Açıklama</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project5Detail">Detay</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
           <!-- Proje kartı 6 -->
-          <article class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer" data-project-id="6">
-            <div class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
-              <span class="text-5xl opacity-60 transition-transform duration-500 ease-out group-hover:scale-110">🖼️</span>
+          <article
+            class="project-card group rounded-2xl overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/50 shadow-lg shadow-slate-200/50 dark:shadow-none cursor-pointer"
+            data-project-id="6">
+            <div
+              class="project-card-image aspect-video bg-gradient-to-br from-cyan-200 to-teal-200 dark:from-cyan-800/40 dark:to-teal-800/40 flex items-center justify-center relative overflow-hidden">
+              <img src="photos/github foto/github.jpg" alt="GitHub Repo" class="project-card-img w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110">
             </div>
             <div class="p-5">
-              <h3 class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400" data-i18n="projects.project6Title">Altıncı Proje</h3>
-              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project6Desc">Açıklama</p>
-              <div class="project-detail text-sm text-slate-600 dark:text-slate-400" data-i18n="projects.project6Detail">Detay</div>
+              <h3
+                class="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2 transition-colors duration-300 group-hover:text-cyan-700 dark:group-hover:text-cyan-400"
+                data-i18n="projects.project6Title">Altıncı Proje</h3>
+              <p class="text-slate-700 dark:text-slate-300 text-sm mb-3 line-clamp-2" data-i18n="projects.project6Desc">
+                Açıklama</p>
+              <div class="project-detail text-sm text-slate-600 dark:text-slate-400"
+                data-i18n="projects.project6Detail">Detay</div>
               <div class="flex gap-3">
-                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm" data-i18n="projects.clickToDetails">İncele</span>
+                <span class="project-link text-cyan-600 dark:text-cyan-400 font-medium text-sm"
+                  data-i18n="projects.clickToDetails">İncele</span>
               </div>
             </div>
           </article>
@@ -253,20 +364,40 @@
     </section>
 
     <!-- ========== İLETİŞİM ========== -->
-    <section id="iletisim" class="py-20 px-4 bg-gradient-to-r from-cyan-100/50 via-white to-white dark:from-cyan-950/25 dark:via-slate-800 dark:to-slate-800 scroll-mt-20 relative z-10">
+    <section id="iletisim"
+      class="py-20 px-4 bg-gradient-to-r from-cyan-100/50 via-white to-white dark:from-cyan-950/25 dark:via-slate-800 dark:to-slate-800 scroll-mt-20 relative z-10">
       <div class="max-w-2xl mx-auto">
-        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100" data-i18n="contact.title">İletişim</h2>
+        <h2 class="section-title text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-800 dark:text-slate-100"
+          data-i18n="contact.title">İletişim</h2>
         <div class="flex flex-wrap justify-center gap-6 mb-10">
-          <a href="https://github.com/canresul07" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg" aria-label="GitHub">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+          <a href="https://github.com/canresul07" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg"
+            aria-label="GitHub">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"></path>
+            </svg>
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/rasul-can-%C3%A7ul%C4%9Fatay-0b5525347/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg" aria-label="LinkedIn">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <a href="https://www.linkedin.com/in/rasul-can-%C3%A7ul%C4%9Fatay-0b5525347/" target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg"
+            aria-label="LinkedIn">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
             LinkedIn
           </a>
-          <a href="mailto:rcculgatay@gmail.com" class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg" data-i18n="contact.email">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <a href="mailto:rcculgatay@gmail.com"
+            class="flex items-center gap-2 px-6 py-4 rounded-xl bg-white/90 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:border-cyan-400 dark:hover:border-cyan-600/50 transition-all duration-300 hover:scale-110 shadow-md font-medium text-lg"
+            data-i18n="contact.email">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
             E-posta
           </a>
         </div>
@@ -275,56 +406,69 @@
   </main>
 
   <!-- Back to top - petrol gradient -->
-  <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-700 to-teal-700 text-white shadow-lg shadow-cyan-600/40 opacity-0 pointer-events-none hover:scale-110 transition-all duration-300 z-40 flex items-center justify-center" aria-label="Back to top" data-i18n-aria="backToTop">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  <button id="back-to-top"
+    class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-700 to-teal-700 text-white shadow-lg shadow-cyan-600/40 opacity-0 pointer-events-none hover:scale-110 transition-all duration-300 z-40 flex items-center justify-center"
+    aria-label="Back to top" data-i18n-aria="backToTop">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
   </button>
 
   <!-- Proje Detay Modalı -->
   <div id="project-modal" class="fixed inset-0 z-[9999] flex items-center justify-center hidden">
     <!-- Overlay (Arka plan karartması) -->
     <div id="modal-overlay" class="modal-overlay absolute inset-0 bg-slate-900/60 backdrop-blur-sm opacity-0"></div>
-    
+
     <!-- Modal İçeriği -->
-    <div id="modal-content" class="modal-content relative bg-white dark:bg-slate-800 w-11/12 max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden opacity-0 scale-95 transform">
+    <div id="modal-content" class="modal-content relative bg-white dark:bg-slate-800 w-[98%] max-w-[98vw] max-h-[98vh] h-[95vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden opacity-0 scale-95 transform transition-all duration-300">
+      
       <!-- Kapatma Butonu -->
       <button id="modal-close" class="absolute top-4 right-4 z-50 p-2 bg-slate-200/50 dark:bg-slate-700/50 hover:bg-slate-300 dark:hover:bg-slate-600 rounded-full transition-colors">
-        <svg class="w-6 h-6 text-slate-800 dark:text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <svg class="w-6 h-6 text-slate-800 dark:text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
       </button>
 
-      <div class="flex-1 overflow-y-auto">
-        <!-- Resim Carousel'i -->
-        <div class="relative w-full aspect-video bg-slate-100 dark:bg-slate-900 overflow-hidden group">
+      <!-- İki Kolonlu Layout (Büyük ekranlarda sol resim, sağ yazı) -->
+      <div class="flex flex-col lg:flex-row h-full overflow-y-auto lg:overflow-hidden">
+        
+        <!-- Sol Taraf: Resim Carousel'i -->
+        <div class="relative w-full lg:w-3/4 bg-slate-900 overflow-hidden group h-[50vh] lg:h-full flex-shrink-0">
           <div id="modal-carousel" class="carousel-inner h-full w-full">
             <!-- JS tarafından doldurulacak (img etiketleri) -->
           </div>
-          
+
           <!-- Carousel Kontrolleri -->
-          <button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-cyan-600 transition-colors opacity-0 group-hover:opacity-100">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/60 text-white rounded-full hover:bg-cyan-600 transition-colors opacity-0 group-hover:opacity-100 z-10">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path>
+            </svg>
           </button>
-          <button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-cyan-600 transition-colors opacity-0 group-hover:opacity-100">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/60 text-white rounded-full hover:bg-cyan-600 transition-colors opacity-0 group-hover:opacity-100 z-10">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path>
+            </svg>
           </button>
 
           <!-- Carousel Dots -->
-          <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-10">
             <!-- JS tarafından doldurulacak -->
           </div>
         </div>
 
-        <!-- Proje Detayları -->
-        <div class="p-6 sm:p-8">
+        <!-- Sağ Taraf: Proje Detayları -->
+        <div class="w-full lg:w-1/4 p-6 sm:p-8 flex flex-col h-full lg:overflow-y-auto custom-scrollbar">
           <h2 id="modal-title" class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4">Proje Başlığı</h2>
-          
+
           <div id="modal-tags" class="flex flex-wrap gap-2 mb-6">
-            <!-- JS tarafından doldurulacak (örn: <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">React</span>) -->
+            <!-- JS tarafından doldurulacak -->
           </div>
 
-          <div id="modal-desc" class="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4 mb-8">
-            <!-- JS tarafından doldurulacak (Detaylı HTML içerik) -->
+          <div id="modal-desc" class="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4 mb-8 flex-1">
+            <!-- JS tarafından doldurulacak -->
           </div>
 
-          <div class="flex gap-4">
+          <div class="flex gap-4 mt-auto pt-6 border-t border-slate-200 dark:border-slate-700">
             <a href="javascript:void(0)" id="modal-live-btn" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 text-center rounded-xl bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-semibold hover:scale-105 transition-all duration-300 shadow-md hover:shadow-cyan-500/50">
               <span data-i18n="projects.live">Canlı</span>
             </a>
@@ -339,4 +483,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
